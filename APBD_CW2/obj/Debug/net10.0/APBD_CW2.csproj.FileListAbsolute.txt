@@ -1,0 +1,14 @@
+/home/main72/LinuxFiles/APBD/APBD_CW2/APBD_CW2/bin/Debug/net10.0/APBD_CW2
+/home/main72/LinuxFiles/APBD/APBD_CW2/APBD_CW2/bin/Debug/net10.0/APBD_CW2.deps.json
+/home/main72/LinuxFiles/APBD/APBD_CW2/APBD_CW2/bin/Debug/net10.0/APBD_CW2.runtimeconfig.json
+/home/main72/LinuxFiles/APBD/APBD_CW2/APBD_CW2/bin/Debug/net10.0/APBD_CW2.dll
+/home/main72/LinuxFiles/APBD/APBD_CW2/APBD_CW2/bin/Debug/net10.0/APBD_CW2.pdb
+/home/main72/LinuxFiles/APBD/APBD_CW2/APBD_CW2/obj/Debug/net10.0/APBD_CW2.GeneratedMSBuildEditorConfig.editorconfig
+/home/main72/LinuxFiles/APBD/APBD_CW2/APBD_CW2/obj/Debug/net10.0/APBD_CW2.AssemblyInfoInputs.cache
+/home/main72/LinuxFiles/APBD/APBD_CW2/APBD_CW2/obj/Debug/net10.0/APBD_CW2.AssemblyInfo.cs
+/home/main72/LinuxFiles/APBD/APBD_CW2/APBD_CW2/obj/Debug/net10.0/APBD_CW2.csproj.CoreCompileInputs.cache
+/home/main72/LinuxFiles/APBD/APBD_CW2/APBD_CW2/obj/Debug/net10.0/APBD_CW2.dll
+/home/main72/LinuxFiles/APBD/APBD_CW2/APBD_CW2/obj/Debug/net10.0/refint/APBD_CW2.dll
+/home/main72/LinuxFiles/APBD/APBD_CW2/APBD_CW2/obj/Debug/net10.0/APBD_CW2.pdb
+/home/main72/LinuxFiles/APBD/APBD_CW2/APBD_CW2/obj/Debug/net10.0/APBD_CW2.genruntimeconfig.cache
+/home/main72/LinuxFiles/APBD/APBD_CW2/APBD_CW2/obj/Debug/net10.0/ref/APBD_CW2.dll
