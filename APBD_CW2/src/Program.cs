@@ -11,7 +11,7 @@ class Program
         
         LibraryData libraryData = JsonReader.ReadJson("DataBase.json");
         Console.WriteLine(libraryData.Users.Count());
-        ItemService.AddItem(new Camera(),libraryData.Items);
+        libraryData.CreateItem(new Camera());
         libraryData.Items.ForEach(item => Console.WriteLine(item.Name));
         
     }
