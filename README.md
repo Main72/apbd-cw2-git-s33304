@@ -1,6 +1,12 @@
 # University Equipment Rental System (APBD_CW2)
 **Index:** s33304
 
+## Instrukcja uruchomienia
+1. Sklonuj repozytorium na swój dysk.
+2. Otwórz projekt w środowisku IDE (np. Visual Studio, JetBrains Rider) lub przejdź do folderu z projektem w terminalu.
+3. Uruchom program komendą `dotnet run`.
+4. Baza danych (plik `DataBase.json`) zostanie automatycznie wygenerowana w głównym katalogu projektu.
+
 ## Project Overview
 This is a C# console application designed to manage a university equipment rental system. The system allows for registering different types of hardware (Laptops, Projectors, Cameras), managing two types of users (Students and Employees), and handling the logic for rentals, returns, and late fee penalties.
 
