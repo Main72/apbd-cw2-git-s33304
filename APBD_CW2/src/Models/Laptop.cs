@@ -9,4 +9,5 @@ public class Laptop:Item
   
     }
 
+    public override string Description { get; protected set; }
 }

@@ -1,13 +1,15 @@
 using APBD_CW2.Enums;
+using APBD_CW2.Services;
 
 namespace APBD_CW2.Models;
 
-public class Item
+public abstract class Item
 {
+    public static ItemService ItemService { get; } = new ItemService();
     private string _name = "Item";
     private static int _id = 0;
 
-    public string Description { get; protected set; }
+    public abstract string Description { get; protected set; }
     public int ItemId { get; } =  ++_id;
 
 

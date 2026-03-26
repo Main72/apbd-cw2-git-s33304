@@ -8,4 +8,6 @@ public class Projector:Item
         Description = "I am a Projector with id: " + ItemId + " I can show pictures";
  
     }
+
+    public override string Description { get; protected set; }
 }

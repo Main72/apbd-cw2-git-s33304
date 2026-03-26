@@ -11,4 +11,6 @@ public class Camera:Item
         Description = "I am a Camera with id: " + ItemId+ " I can make photos";
      
     }
+
+    public override string Description { get; protected set; }
 }
