@@ -1,23 +1,26 @@
 using System.Text.Json;
+using System.IO;
+using System.Collections.Generic;
 using APBD_CW2.Models;
+using System;
 
 namespace APBD_CW2.Services;
 
 public class JsonReader
 {
-    public static void ReadJson(string json)
+    
+    public static LibraryData ReadJson(string filePath)
     {
-        // 1. Read the JSON file into a string
-        string jsonString = File.ReadAllText("DataBase.json");
+      
+        string jsonString = File.ReadAllText(filePath);
 
-        // 2. Deserialize into the wrapper class
-        LibraryData data = JsonSerializer.Deserialize<LibraryData>(jsonString);
+      
+        var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
+        LibraryData data = JsonSerializer.Deserialize<LibraryData>(jsonString, options);
 
-        // 3. Extract your lists!
         List<User> users = data.Users;
         List<Item> items = data.Items;
 
-        // --- Testing if it worked ---
         Console.WriteLine($"Loaded {users.Count} users:");
         foreach (var user in users)
         {
@@ -29,6 +32,6 @@ public class JsonReader
         {
             Console.WriteLine($"- {item.Name} ({item.GetType().Name})");
         }
+        return data;
     }
-
 }

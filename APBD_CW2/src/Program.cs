@@ -8,12 +8,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        List<Item> items = new List<Item>();
-        JsonReader jsonReader = new JsonReader();
-        jsonReader.
-        Laptop l = new Laptop();
-        Camera c = new Camera();
-        Console.WriteLine("Hello, World! " + c.Description + c.Name);
-   
+        LibraryData libraryData = JsonReader.ReadJson("DataBase.json");
+        Console.WriteLine(libraryData.Users.Count());
+        
     }
 }
