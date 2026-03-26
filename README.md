@@ -1,7 +1,9 @@
 s33304
+
 University Equipment Rental System (APBD_CW2)
 Project Overview
 This is a C# console application designed to manage a university equipment rental system. The system allows for registering different types of hardware (Laptops, Projectors, Cameras), managing two types of users (Students and Employees), and handling the logic for rentals, returns, and late fee penalties.
+
 
 UserType  |MaxItems  | Late Penalty
 Student,  |     2    |   5 PLN / Day
