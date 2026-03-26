@@ -1,0 +1,56 @@
+{
+  "Users": [
+    {
+      "Id": 1,
+      "FirstName": "Jan",
+      "LastName": "Kowalski",
+      "UserType": "Student"
+    },
+    {
+      "Id": 2,
+      "FirstName": "Anna",
+      "LastName": "Nowak",
+      "UserType": "Employee"
+    },
+    {
+      "Id": 3,
+      "FirstName": "Piotr",
+      "LastName": "Zieliński",
+      "UserType": "Student"
+    }
+  ],
+  "Items": [
+    {
+      "Id": 1,
+      "Name": "MacBook Pro 16",
+      "ItemType": "Laptop",
+      "Status": "Available",
+      "RamSizeGB": 32,
+      "Processor": "Apple M2 Max"
+    },
+    {
+      "Id": 2,
+      "Name": "Dell Latitude 5530",
+      "ItemType": "Laptop",
+      "Status": "Available",
+      "RamSizeGB": 16,
+      "Processor": "Intel Core i7"
+    },
+    {
+      "Id": 3,
+      "Name": "Epson EB-U42",
+      "ItemType": "Projector",
+      "Status": "Rented",
+      "Resolution": "1920x1200",
+      "BrightnessLumens": 3600
+    },
+    {
+      "Id": 4,
+      "Name": "Sony Alpha A7 III",
+      "ItemType": "Camera",
+      "Status": "Unavailable",
+      "Megapixels": 24,
+      "IsLensIncluded": true
+    }
+  ]
+}

@@ -8,8 +8,9 @@ public class RentItem : IRentItem
 {
     private readonly List<Item> _reservations = [];
 
-    public void RentAnItem(Item item, User user , DateTime dayOfRent)
-    {
+
+    public void RentAnItem(Item item, User user , DateTime dayOfRent){
+
         if (item.Status != ItemStatus.Available)
         {
             throw new ItemUnavalibleExeption(item.ItemId);
@@ -34,7 +35,4 @@ public class RentItem : IRentItem
         throw new NotImplementedException();
     }
 }
-
-       
-   
 
