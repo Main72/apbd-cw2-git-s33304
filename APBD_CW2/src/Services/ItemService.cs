@@ -4,14 +4,13 @@ namespace APBD_CW2.Services;
 
 public class ItemService
 {
-    private static int _id = 0;
-    public int NextId(Item item)
+    public static void AddItem(Item newItem, List<Item> existingItems)
     {
-        return 1;
+        int nextId = existingItems.Any() ? existingItems.Max(i => i.Id) + 1 : 1;
+        newItem.Id = nextId;
+        
+        existingItems.Add(newItem);
+
+        Console.WriteLine($"[ItemService] Added {newItem.Name} with auto-generated ID: {newItem.Id}");
     }
-    public int GetLastId()
-    {
-        return _id;
-    }
-    
 }

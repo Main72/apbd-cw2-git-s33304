@@ -10,18 +10,17 @@ namespace APBD_CW2.Models;
 [JsonDerivedType(typeof(Camera), typeDiscriminator: "Camera")]
 public abstract class Item
 {
-    public static ItemService ItemService { get; } = new ItemService();
     private string _name = "Item";
     private static int _id = 0;
 
     public abstract string Description { get; protected set; }
     
-   public int ItemId { get; set; }
+    public int Id { get; set; }
 
     [JsonConverter(typeof(JsonStringEnumConverter))]
     public ItemStatus Status { get; set; } = ItemStatus.Available;
     
-    private static int nextItemId = JsonReader.ReadJson("DataBase.json").Items.Max(x => x.ItemId) + 1;
+    private static int nextItemId = JsonReader.ReadJson("DataBase.json").Items.Max(x => x.Id) + 1;
     
     public string Name
     {

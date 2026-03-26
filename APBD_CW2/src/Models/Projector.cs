@@ -5,7 +5,7 @@ public class Projector:Item
     public Projector()
     {
         Name = "Projector";
-        Description = "I am a Projector with id: " + ItemId + " I can show pictures";
+        Description = "I am a Projector with id: " + Id + " I can show pictures";
  
     }
 

@@ -5,7 +5,7 @@ public class Laptop:Item
     public Laptop()
     {
         Name = "Laptop";
-        Description = "I am a Laptop with id: " + ItemId+ " I can be your pocket assistant";
+        Description = "I am a Laptop with id: " + Id+ " I can be your pocket assistant";
   
     }
 

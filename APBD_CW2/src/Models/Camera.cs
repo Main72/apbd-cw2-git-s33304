@@ -8,7 +8,7 @@ public class Camera:Item
     public Camera()
     {
         Name = "Camera";
-        Description = "I am a Camera with id: " + ItemId+ " I can make photos";
+        Description = "I am a Camera with id: " + Id+ " I can make photos";
      
     }
 

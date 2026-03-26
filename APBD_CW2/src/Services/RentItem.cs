@@ -13,7 +13,7 @@ public class RentItem : IRentItem
 
         if (item.Status != ItemStatus.Available)
         {
-            throw new ItemUnavalibleExeption(item.ItemId);
+            throw new ItemUnavalibleExeption(item.Id);
         }
     }
 

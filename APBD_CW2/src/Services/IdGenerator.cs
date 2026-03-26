@@ -21,6 +21,6 @@ public static class IdGenerator
             return 1;
         }
         
-        return items.Max(i => i.ItemId) + 1;
+        return items.Max(i => i.Id) + 1;
     }
 }
