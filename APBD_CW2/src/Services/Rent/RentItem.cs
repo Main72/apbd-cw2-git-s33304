@@ -6,7 +6,7 @@ namespace APBD_CW2.Services;
 
 public class RentItem : IRentItem
 {
-    private readonly List<Item> _reservations = [];
+    private readonly List<Item> _rentedItems = [];
 
 
     public void RentAnItem(Item item, User user , DateTime dayOfRent){
@@ -14,6 +14,10 @@ public class RentItem : IRentItem
         if (item.Status != ItemStatus.Available)
         {
             throw new ItemUnavalibleExeption(item.Id);
+        }
+        else
+        {
+            item.Status = ItemStatus.Unavailable;
         }
     }
 
