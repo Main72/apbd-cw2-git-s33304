@@ -16,10 +16,12 @@ public abstract class Item
 
     public abstract string Description { get; protected set; }
     
-   public int ItemId { get; } = ++_id; 
+   public int ItemId { get; set; }
 
     [JsonConverter(typeof(JsonStringEnumConverter))]
     public ItemStatus Status { get; set; } = ItemStatus.Available;
+    
+    private static int nextItemId = JsonReader.ReadJson("DataBase.json").Items.Max(x => x.ItemId) + 1;
     
     public string Name
     {
