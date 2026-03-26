@@ -5,9 +5,21 @@ public class Laptop:Item
     public Laptop()
     {
         Name = "Laptop";
-        Description = "I am a Laptop with id: " + Id+ " I can be your pocket assistant";
-  
+    }
+    public Laptop(int ramSizeGb , string processorName)
+    {
+        Name = "Laptop";
+        RamSizeGB = ramSizeGb;
+        Processor = processorName;
     }
 
-    public override string Description { get; protected set; }
+    public int RamSizeGB { get; set; }
+    public string Processor { get; set; }
+
+
+    public override string Description 
+    { 
+        get { return $"I am a Laptop with id: {Id}. I can be your pocket assistant."; } 
+        protected set { }
+    }
 }

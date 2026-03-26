@@ -5,9 +5,24 @@ public class Projector:Item
     public Projector()
     {
         Name = "Projector";
-        Description = "I am a Projector with id: " + Id + " I can show pictures";
+      
  
     }
+    public Projector(string resolution , int brightnessLumens)
+    {
+        Name = "Projector";
+        Resolution =  resolution;
+        BrightnessLumens =  brightnessLumens;
+    }
 
-    public override string Description { get; protected set; }
+    public string Resolution { get; set; }
+
+    public int BrightnessLumens { get; set; }
+
+
+    public override string Description 
+    { 
+        get { return $"I am a Projector with id: {Id } I can show pictures"; } 
+        protected set { }
+    }
 }

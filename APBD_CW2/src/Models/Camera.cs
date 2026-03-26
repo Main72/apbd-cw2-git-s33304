@@ -8,9 +8,24 @@ public class Camera:Item
     public Camera()
     {
         Name = "Camera";
-        Description = "I am a Camera with id: " + Id+ " I can make photos";
      
     }
+    public Camera(bool isLensIncluded , int megapixels)
+    {
+        Name = "Camera";
+        IsLensIncluded =  isLensIncluded;
+        Megapixels = megapixels;
 
-    public override string Description { get; protected set; }
+    }
+
+    public bool IsLensIncluded { get; set; }
+
+    public int Megapixels { get; set; }
+    
+
+    public override string Description 
+    { 
+        get { return $"I am a Camera with id: {Id} I can make photos"; } 
+        protected set { }
+    }
 }
