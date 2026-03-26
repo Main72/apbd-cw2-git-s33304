@@ -84,7 +84,7 @@ class Program
         {
             Console.WriteLine($"- {item.Name} ({item.GetType().Name})");
         }
-
+//
         //repo.Save(db);
         Console.WriteLine("\nStan systemu został pomyślnie zapisany do DataBase.json");
     }
