@@ -5,22 +5,18 @@ namespace APBD_CW2.Models;
 public class Rental
 {
     public int Id { get; set; }
-    
     public int UserId { get; set; }
     public int ItemId { get; set; }
-    
     public DateTime RentalDate { get; set; }
     public DateTime DueDate { get; set; }
-    
-    public DateTime? ReturnDate { get; set; } 
-    
-    public Rental() { }
+    public DateTime? ReturnDate { get; set; }
 
-    public Rental(int userId, int itemId, int daysToRent)
+    public Rental() { }
+    public Rental(int userId, int itemId, int days)
     {
         UserId = userId;
         ItemId = itemId;
         RentalDate = DateTime.Now;
-        DueDate = DateTime.Now.AddDays(daysToRent);
+        DueDate = DateTime.Now.AddDays(days);
     }
 }

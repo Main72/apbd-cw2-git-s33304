@@ -2,55 +2,71 @@
   "Users": [
     {
       "UserType": "Student",
+      "Type": "Student",
+      "MaxRentCount": 2,
       "Id": 1,
       "FirstName": "Jan",
       "LastName": "Kowalski"
     },
     {
       "UserType": "Employee",
+      "Type": "Employee",
+      "MaxRentCount": 5,
       "Id": 2,
       "FirstName": "Anna",
       "LastName": "Nowak"
-    },
-    {
-      "UserType": "Student",
-      "Id": 3,
-      "FirstName": "Piotr",
-      "LastName": "Abdula"
     }
   ],
   "Items": [
     {
       "ItemType": "Laptop",
+      "RamSizeGB": 32,
+      "Processor": "M2 Max",
       "Id": 1,
       "Name": "MacBook Pro 16",
-      "Status": "Available",
-      "RamSizeGB": 32,
-      "Processor": "Apple M2 Max"
-    },
-    {
-      "ItemType": "Laptop",
-      "Id": 2,
-      "Name": "Dell Latitude 5530",
-      "Status": "Available",
-      "RamSizeGB": 16,
-      "Processor": "Intel Core i7"
+      "Status": "Available"
     },
     {
       "ItemType": "Projector",
-      "Id": 3,
-      "Name": "Epson EB-U42",
-      "Status": "Rented",
-      "Resolution": "1920x1200",
-      "BrightnessLumens": 3600
+      "Resolution": "1080p",
+      "BrightnessLumens": 3000,
+      "Id": 2,
+      "Name": "Epson X",
+      "Status": "Available"
     },
     {
       "ItemType": "Camera",
-      "Id": 4,
-      "Name": "Sony Alpha A7 III",
-      "Status": "Unavailable",
       "Megapixels": 24,
-      "IsLensIncluded": true
+      "IsLensIncluded": true,
+      "Id": 3,
+      "Name": "Sony A7 III",
+      "Status": "Unavailable"
+    },
+    {
+      "ItemType": "Laptop",
+      "RamSizeGB": 16,
+      "Processor": "i7",
+      "Id": 4,
+      "Name": "Dell",
+      "Status": "Available"
+    }
+  ],
+  "Rentals": [
+    {
+      "Id": 1,
+      "UserId": 1,
+      "ItemId": 1,
+      "RentalDate": "2026-03-26T21:53:26.8374142+01:00",
+      "DueDate": "2026-04-02T21:53:26.8478584+02:00",
+      "ReturnDate": "2026-04-06T21:53:26.8478584+02:00"
+    },
+    {
+      "Id": 2,
+      "UserId": 1,
+      "ItemId": 2,
+      "RentalDate": "2026-03-26T21:53:26.8491118+01:00",
+      "DueDate": "2026-03-29T21:53:26.8491136+02:00",
+      "ReturnDate": "2026-03-26T21:53:26.8509279+01:00"
     }
   ]
 }

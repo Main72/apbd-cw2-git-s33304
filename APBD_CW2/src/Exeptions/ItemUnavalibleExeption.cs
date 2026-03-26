@@ -1,3 +1,5 @@
+using APBD_CW2.Models;
+
 namespace APBD_CW2.Exeptions;
 
-public class ItemUnavalibleExeption(int itemId): Exception($"Item with id {itemId} is not available.");
+public class ItemUnavalibleExeption(Item item): Exception($"Niedostępne: Sprzęt '{item.Name}' ma status {item.Status}.");
